@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_wards"
+            android:title="Wards"
+            android:textColor="#ff670adc"/>
+        <item
+            android:id="@+id/nav_patients"
+            android:title="Patients"
+            android:textColor="#ff670adc"/>
+        <item
+            android:id="@+id/nav_nurses"
+            android:title="Nurses"
+            android:textColor="#ff670adc"/>
+        <item
+            android:id="@+id/nav_doctors"
+            android:title="Doctors"
+            android:textColor="#ff670adc"/>
+    </group>
+
+
+</menu>

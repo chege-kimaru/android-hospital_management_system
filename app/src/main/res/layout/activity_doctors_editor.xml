@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_back"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.android.kevin.hospitaldatabase.DoctorsEditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/container_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_name"
+                style="@style/CategoryStyle"
+                android:text="@string/name"/>
+
+            <EditText
+                android:id="@+id/edit_name"
+                style="@style/EditorFieldStyle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_date_of_birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_date_of_birth"
+                style="@style/CategoryStyle"
+                android:text="@string/date_of_birth"/>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingLeft="4dp">
+
+                <DatePicker
+                    android:id="@+id/datePickerDob"
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner"
+                    android:theme="@style/Theme.Transparent"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_gender"
+                style="@style/CategoryStyle"
+                android:text="@string/date_gender"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <!-- Gender drop-down spinner -->
+                <Spinner
+                    android:id="@+id/spinner_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/container_specialization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_specialization"
+                style="@style/CategoryStyle"
+                android:text="@string/date_specialization"/>
+
+            <EditText
+                android:id="@+id/edit_specialization"
+                style="@style/EditorFieldStyle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_illness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_illness"
+                style="@style/CategoryStyle"
+                android:text="illness"/>
+
+            <EditText
+                android:id="@+id/edit_illness"
+                style="@style/EditorFieldStyle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_id_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_id_no"
+                style="@style/CategoryStyle"
+                android:text="@string/date_id_no"/>
+
+            <EditText
+                android:id="@+id/edit_id_no"
+                style="@style/EditorFieldStyle"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_date_of_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_date_of_report"
+                style="@style/CategoryStyle"
+                android:text="@string/date_of_report"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingLeft="4dp">
+
+                <DatePicker
+                    android:id="@+id/datePickerRD"
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner"
+                    android:theme="@style/Theme.Transparent"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/enter_back"
+            android:enabled="true"
+            android:text="save"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="italic"/>
+
+        <Button
+            android:id="@+id/save_changes_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/enter_back"
+            android:enabled="true"
+            android:text="save changes"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>

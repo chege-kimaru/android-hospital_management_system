@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Hospital Database</string>
+    <string name="title_activity_content">ContentActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_delete">delete</string>
+    <string name="action_save">save</string>
+    <string name="action_add">Add</string>
+    <string name="name">Name</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="date_gender">Gender</string>
+    <string name="date_specialization">Specialization</string>
+    <string name="date_id_no">ID number</string>
+    <string name="date_of_report">Reporting date</string>
+    <string name="date_of_retirement">Retirement date</string>
+
+    <string name="gender_male">male</string>
+    <string name="gender_female">female</string>
+    <string name="gender_unknown">unknown</string>
+    <string name="action_edit">Save Changes</string>
+    <string name="wards">Wards</string>
+    <string name="nurses">nurses</string>
+    <string name="title_activity_all_doctors_details">AllDoctorsDetailsActivity</string>
+    <string name="title_activity_all_nurses_details">AllNursesDetailsActivity</string>
+    <string name="title_activity_all_patients_details">AllPatientsDetailsActivity</string>
+    <string name="title_activity_all_ward_details">AllWardDetailsActivity</string>
+</resources>

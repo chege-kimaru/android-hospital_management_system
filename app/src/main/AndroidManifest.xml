@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.android.kevin.hospitaldatabase">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/realdtabaseicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/realdtabaseicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WardsActivity"
+            android:label="Wards">
+        </activity>
+        <activity
+            android:name=".PatientsActivity"
+            android:label="Patients">
+        </activity>
+        <activity
+            android:name=".DoctorsActivity"
+            android:label="Doctors">
+        </activity>
+        <activity
+            android:name=".NursesActivity"
+            android:label="Nurses">
+        </activity>
+        <activity
+            android:name=".ContentActivity"
+            android:label="Hospital Database"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".DoctorsEditorActivity">
+        </activity>
+
+        <provider
+            android:name=".data.DoctorsDbProvider"
+            android:authorities="com.android.kevin.hospitaldatabase"
+            android:exported="false"/>
+
+        <activity android:name=".NursesEditorActivity">
+        </activity>
+        <activity android:name=".PatientsEditorActivity">
+        </activity>
+        <activity android:name=".WardsEditorActivity">
+        </activity>
+        <activity
+            android:name=".AllDoctorsDetailsActivity"
+            android:label="@string/title_activity_all_doctors_details"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".AllNursesDetailsActivity"
+            android:label="@string/title_activity_all_nurses_details"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".AllPatientsDetailsActivity"
+            android:label="@string/title_activity_all_patients_details"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".AllWardDetailsActivity"
+            android:label="@string/title_activity_all_ward_details"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
